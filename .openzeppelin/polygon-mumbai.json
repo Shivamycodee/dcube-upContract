@@ -1,0 +1,131 @@
+{
+  "manifestVersion": "3.2",
+  "admin": {
+    "address": "0x5414c1560CCd7D2F6E8c09B315D612b60C1eF20f",
+    "txHash": "0x9d6aedc0ac03fc8fc9e841f933c116209e335b97ee9104b719a4f1a57e3d8c32"
+  },
+  "proxies": [
+    {
+      "address": "0x587BAd903B09CB5FAe946244272e32c7095CE32c",
+      "txHash": "0xc8e587a7ac3ada73c9d418eafc8aae406cb1e2bace0427910387f5165811a7a9",
+      "kind": "transparent"
+    }
+  ],
+  "impls": {
+    "863cf3550ad249fded021b5286cbca860a929483a77c5e28b03a36b154f1fcab": {
+      "address": "0xFaDF0eBa27D6F23bad5A65D35170189DEDF1F07F",
+      "txHash": "0x4e80386b509d846fcde4a218e329b6c905dcd7886e4201652700ee27b7902717",
+      "layout": {
+        "solcVersion": "0.8.17",
+        "storage": [
+          {
+            "label": "userUploads",
+            "offset": 0,
+            "slot": "0",
+            "type": "t_mapping(t_address,t_mapping(t_uint256,t_struct(uploadedFile)93_storage))",
+            "contract": "Dcube",
+            "src": "contracts\\Dcube.sol:53"
+          },
+          {
+            "label": "userImports",
+            "offset": 0,
+            "slot": "1",
+            "type": "t_mapping(t_address,t_mapping(t_uint256,t_struct(importedFile)100_storage))",
+            "contract": "Dcube",
+            "src": "contracts\\Dcube.sol:54"
+          },
+          {
+            "label": "fileCount",
+            "offset": 0,
+            "slot": "2",
+            "type": "t_mapping(t_address,t_uint256)",
+            "contract": "Dcube",
+            "src": "contracts\\Dcube.sol:55"
+          }
+        ],
+        "types": {
+          "t_address": {
+            "label": "address",
+            "numberOfBytes": "20"
+          },
+          "t_mapping(t_address,t_mapping(t_uint256,t_struct(importedFile)100_storage))": {
+            "label": "mapping(address => mapping(uint256 => struct Dcube.importedFile))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_mapping(t_uint256,t_struct(uploadedFile)93_storage))": {
+            "label": "mapping(address => mapping(uint256 => struct Dcube.uploadedFile))",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_address,t_uint256)": {
+            "label": "mapping(address => uint256)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(importedFile)100_storage)": {
+            "label": "mapping(uint256 => struct Dcube.importedFile)",
+            "numberOfBytes": "32"
+          },
+          "t_mapping(t_uint256,t_struct(uploadedFile)93_storage)": {
+            "label": "mapping(uint256 => struct Dcube.uploadedFile)",
+            "numberOfBytes": "32"
+          },
+          "t_string_storage": {
+            "label": "string",
+            "numberOfBytes": "32"
+          },
+          "t_struct(importedFile)100_storage": {
+            "label": "struct Dcube.importedFile",
+            "members": [
+              {
+                "label": "CID",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "timeStamp",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "fileName",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_struct(uploadedFile)93_storage": {
+            "label": "struct Dcube.uploadedFile",
+            "members": [
+              {
+                "label": "CID",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "0"
+              },
+              {
+                "label": "timeStamp",
+                "type": "t_uint256",
+                "offset": 0,
+                "slot": "1"
+              },
+              {
+                "label": "fileName",
+                "type": "t_string_storage",
+                "offset": 0,
+                "slot": "2"
+              }
+            ],
+            "numberOfBytes": "96"
+          },
+          "t_uint256": {
+            "label": "uint256",
+            "numberOfBytes": "32"
+          }
+        }
+      }
+    }
+  }
+}
